@@ -1,9 +1,8 @@
 # JQ
-```jQuery(document).ready(function($){
+	jQuery(document).ready(function($){
 	var j =  $("[СЮДА]");
 	j.css({"border":"2px solid red"});
-
-});```
+	});
 ### Селекторы по атрибутам
 - элементы, содержащие атрибут name - ```"[name]"```
 - элементы, у которых значение атрибута name совподает с value - ```"[name=value]"```
@@ -15,8 +14,7 @@
 - элементы, у которых значение атрибута name имеют префикс value (равен value или имеет вид: "value-*") - ```"[name |=value]"```
 - элементы, соответствующие всем заданным условиям на атрибуты одновременно - ```"[first][second][..."```
 ## Пример: Соберёт все классы название которых НЕ "cont"
-```jQuery(document).ready(function($){
+	jQuery(document).ready(function($){
 	var j =  $("[class !=cont]");
 	j.css({"border":"2px solid red"});
-
-});```
+	});
