@@ -53,3 +53,7 @@
 	jQuery(document).ready(function($){
 	$("span:nth-child(even)").css({"border":"2px solid green"});
 	});
+##### Пример: Найдём каждый span находящийся на позиции 2n+3(каждый спад в бюлоке попадает в эти скобки и с каждым происходит это действие)
+	jQuery(document).ready(function($){
+	$("span:nth-child(2n+3)").css({"border":"2px solid green"});
+	});
