@@ -147,10 +147,10 @@
 - добавляет заданное содержимое перед элементами на странице - ```".before()"``` ```".insertBefore()"```
 ##### Пример: Добавить в элемент с id #tut тег p
 Используюя appendTo
-	jQuery(document).ready(function($){
+	```jQuery(document).ready(function($){
 	$("<p>NEW PUNKT</p>").appendTo($("#tut"));
-	});
+	});```
 Используя append
-	jQuery(document).ready(function($){
+	```jQuery(document).ready(function($){
 	$("#tut").append("<p>NEW PUNKT</p>");
-	});
+	});```
