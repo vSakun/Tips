@@ -264,3 +264,21 @@
 	jQuery(document).ready(function($){
 	$("li").slice(2,7).css({"border":"1px solid red"});
 	});
+#### Циклический обход выборки
+- Вызывает заданную функцию для каждого элемента выборки - ```".each()"```
+- Вызывает заданную функию для каждого элемента выборки, и в итоге создаёт новую выборку, составленную из значений, возвращённых этой функций - ```".map()"```
+##### Пример: Прочитать содержимое всех элементов с тегом "li"(v_index - индекс текущего html элемента, elem - текущий html элемент DOM)
+	jQuery(document).ready(function($){
+	var resault = "";
+	$("li").each(function(v_index,elem){
+	resault = resault + $(this).text() + "|";
+	});
+	alert(resault);
+	});
+##### Пример: Сохранить в объект, в текстовом виде значение "src" всех элементов с тегом "img"(v_index - индекс текущего html элемента, elem - текущий html элемент DOM)
+	jQuery(document).ready(function($){
+	var resault = $("img").map(function(v_index,elem){
+	return $(elem).attr("src");
+	});
+	alert(resault);
+	});
