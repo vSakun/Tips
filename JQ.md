@@ -362,3 +362,12 @@
 			$(this).css({"border":"1px solid red"});
 		});
 	});
+##### Пример: Пример использования .trigger()
+	jQuery(document).ready(function($){
+		$("a").bind({
+			"click":function() {alert("Clock")},
+			"mouseenter":function(event) {$(this).css({"border":"1px solid red"})},
+			"my_ev":function(){alert("my event")}
+		});
+		$("a").trigger("my_ev");
+	});
