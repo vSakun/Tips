@@ -374,21 +374,21 @@
 #### Объект Event
 - методы -
 ```"event.isDefaultPrevented()"``` - проверяет вызывался ли метод event.preventDefault()
-```"event.isImmediatePropagationStopped()"```
-```"event.isPropagationStopped()"```
+```"event.isImmediatePropagationStopped()"``` - проверяет вызывался ли метод event.stopImmediatePropagation()
+```"event.isPropagationStopped()"``` - проверяет вызывался ли метод event.stopPropagation()
 ```"event.preventDefault()"``` - отменяет действие по умолчанию
-```"event.stopPropagation()"```
-```"event.stopImmediatePropagation()"```
+```"event.stopPropagation()"``` - предотвращает пережачу события вверх от дочернего элемента к родительскому
+```"event.stopImmediatePropagation()"``` - останавливает выполнение дальнейших функций вызываемого события
 - свойства  - 
-```"event.currentTarget"```
-```"event.data"```
-```"event.delegateTarget"```
-```"event.pageX"```
-```"event.pageY"```
-```"event.namespace"```
-```"event.relatedTarget"```
-```"event.result"```
-```"event.target"```
-```"event.timeStamp"```
-```"event.type"```
-```"event.which"```
+```"event.currentTarget"``` - храниться элемент событие которого обрабатывается
+```"event.data"``` - храняться дополнительноо передоваемые переменные 
+```"event.delegateTarget"``` - элемент на котором установлен сработавший обработчик события
+```"event.pageX"``` - координаты курсора по оХ
+```"event.pageY"``` - координаты курсора по оУ
+```"event.namespace"``` - содержит строковое значение пространства имён произошедшего события
+```"event.relatedTarget"``` - элеент связанный с событием(Например при .mouseout() в данном свойстве будет объект элемента куда переместился курсор)
+```"event.result"``` - значение которое возвращает предыдущая фугкция обработчик вызываемого события
+```"event.target"``` - объект элемента который является источником события
+```"event.timeStamp"``` - содержит время когда произошло события с 1 января 1970 года (в секундах)
+```"event.type"``` - храниться тип произошедшего события
+```"event.which"``` - содержит информацию о нажатых клавишах
