@@ -373,22 +373,22 @@
 	});
 #### Объект Event
 - методы -
-```".event.isDefaultPrevented()"```
-```".event.isImmediatePropagationStopped()"```
-```".event.isPropagationStopped()"```
-```".event.preventDefault()"```
-```".event.stopPropagation()"```
-```".event.stopImmediatePropagation()"```
+```"event.isDefaultPrevented()"``` - проверяет вызывался ли метод event.preventDefault()
+```"event.isImmediatePropagationStopped()"```
+```"event.isPropagationStopped()"```
+```"event.preventDefault()"``` - отменяет действие по умолчанию
+```"event.stopPropagation()"```
+```"event.stopImmediatePropagation()"```
 - свойства  - 
-```".event.currentTarget"```
-```".event.data"```
-```".event.delegateTarget"```
-```".event.pageX"```
-```".event.pageY"```
-```".event.namespace"```
-```".event.relatedTarget"```
-```".event.result"```
-```".event.target"```
-```".event.timeStamp"```
-```".event.type"```
-```".event.which"```
+```"event.currentTarget"```
+```"event.data"```
+```"event.delegateTarget"```
+```"event.pageX"```
+```"event.pageY"```
+```"event.namespace"```
+```"event.relatedTarget"```
+```"event.result"```
+```"event.target"```
+```"event.timeStamp"```
+```"event.type"```
+```"event.which"```
