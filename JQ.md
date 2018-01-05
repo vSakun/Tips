@@ -383,7 +383,8 @@
 ```".event.currentTarget"```
 ```".event.data"```
 ```".event.delegateTarget"```
-```".event.pageX"```,```".event.pageY"```
+```".event.pageX"```
+```".event.pageY"```
 ```".event.namespace"```
 ```".event.relatedTarget"```
 ```".event.result"```
