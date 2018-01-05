@@ -1,5 +1,5 @@
 # JQ СПРАВОЧНИК
-[toc]
+[TOC]
 ### Выбор элемента
 	jQuery(document).ready(function($){
 	var j =  $("[СЮДА]");
